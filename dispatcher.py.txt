@@ -19,7 +19,9 @@ def run_dispatch():
         
        print(
            f"Assign Truck {truck['truck_id']}"
+           
            f"to Load {load['load_id']}"
+           
            f"{load['origin']} -> {load['destination']}"
            )
 
@@ -27,3 +29,4 @@ def run_dispatch():
 
 
        print("No good dispatch opportunities found.")
+
