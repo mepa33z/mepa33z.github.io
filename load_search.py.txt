@@ -1,0 +1,10 @@
+import pandas as pd
+
+def find_loads():
+
+    loads = pd.read_csv("data/loads/loads.csv")
+    
+    print("\nLoads Found:\n")
+    print(loads)
+
+    return loads

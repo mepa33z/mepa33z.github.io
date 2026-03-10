@@ -1,0 +1,5 @@
+from dispatcher import run_dispatch
+
+print("\nReefer Boutique Dispatch System Starting...\n")
+
+run_dispatch()
