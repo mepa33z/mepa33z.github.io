@@ -20,15 +20,16 @@ def run_dispatch():
        print("\nDispatch Recommendation:\n")
         
        print(
-           f"Assign Truck {truck['truck_id']}"
-           f"to Load {load['load_id']}"
-           f"{load['origin']}  ->  {load['destination']}"
+           f"Assign Truck{truck['truck_id']}"
+           f"to Load{load['load_id']}"
+           f"{load['origin']}->{load['destination']}"
            )
 
     else: 
 
 
        print("No good dispatch opportunities found.")
+
 
 
 
