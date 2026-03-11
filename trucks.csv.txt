@@ -1,0 +1,1 @@
+truck_id, driver_name, location, equipment, sta 1, John Doe, Chicago IL, Reefer, Available, 2, Maria Lopez, Dallas TX, Reefer, Available
