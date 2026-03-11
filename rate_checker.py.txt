@@ -2,10 +2,11 @@ def filter_good_loads(loads):
 
     loads["rate_per_mile"] = loads["rate"]
 
-    good_loads = loads[loads["rate_per_mile"] >= 2.5]
+    good_loads = loads[loads["rate_per_mile"] >=2.5]
    
-    print("\nGood Loads (> = $2.50 per mile)")
+    print("\nGood Loads (>= $2.50 per mile)")
     print(good_loads)
   
     return good_loads
+
 
