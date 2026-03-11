@@ -4,9 +4,10 @@ def get_available_trucks():
     
     trucks = pd.read_csv("data/truck_list/trucks.csv")
     
-    available = trucks[trucks["status"] = = "Available"]
+    available = trucks[trucks["status"] == "Available"]
     
     print("\nAvailable Trucks:\n")
     print(available)
     
+
     return available
