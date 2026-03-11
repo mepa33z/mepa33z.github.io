@@ -1,5 +1,5 @@
-load_id, origin, destination, rate, miles, equipment
-101, Chicago IL, Atlanta GA, 3200, 720, Reefer
-102, Dallas TX, Denver CO, 2800, 780, Reefer
-103, Miami FL, Houston TX, 3000,1180, Reefer,
-104, Los Angeles CA, Phoenix AZ, 1500, 370, Reefer
+load_id,origin,destination,rate,miles,equipment
+101,Chicago IL,Atlanta GA,3200,720,Reefer
+102,Dallas TX,Denver CO,2800,780,Reefer
+103,Miami FL,Houston TX,3000,1180,Reefer,
+104,Los Angeles CA,Phoenix AZ,1500,370,Reefer
