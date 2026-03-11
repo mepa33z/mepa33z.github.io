@@ -5,8 +5,8 @@ from dispatcher import run_dispatch
 # Configure logging
 logging.basicConfig(
     level = logging.INFO,
-    format = '%(asctime)s - %
-(levelname)s - %(message)s'
+    'format = '%(asctime)s -
+%(levelname)s - %(message)s'
 )
 
 logger = logging.getlogger(_name_)
@@ -30,4 +30,5 @@ Dispatch System Shutting Down...")
 
 if_name_ == "_main_":
    main()
+
 
