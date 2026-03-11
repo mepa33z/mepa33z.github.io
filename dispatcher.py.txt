@@ -12,7 +12,7 @@ def run_dispatch():
 
     trucks = get_available_trucks()
  
-    if len(good_loads) > 0 and len (trucks)>0:
+    if len(good_loads) > 0 and len(trucks) > 0:
 
        load = good_loads.iloc[0]
        truck = trucks.iloc[0]
@@ -29,6 +29,7 @@ def run_dispatch():
 
 
        print("No good dispatch opportunities found.")
+
 
 
 
