@@ -27,8 +27,8 @@ def run_dispatch():
 
     else: 
 
+    print("No good dispatch opportunities found.")
 
-       print("No good dispatch opportunities found.")
 
 
 
