@@ -35,20 +35,17 @@ def run_dispatch():
            })
 
            #Sort loads by carrier profit
-         evaluated_loads.sort(
-             key=lambda x: x["profit"]["carrier_profit"], 
-             reverse=True
-             )
+         evaluated_loads.sort(key=lambda x: x["profit"]["carrier_profit"],reverse=True)
              
-             best_load = evaluated_loads[0]
+best_load = evaluated_loads[0]
        
-            truck = trucks.iloc[0]
+truck = trucks.iloc[0]
        
             print("\nDispatch Recommendation:\n")
        
             print(
-                f"Assign Truck {truck['truck_id']}"
-                f"to load {best_load['load_id']}"
+                f"Assign Truck {truck['truck_id']}" 
+                f"to load {best_load['load_id']}" 
                 f"{best_load['origin']} -> {best_load['destination']}"
             )
        
@@ -62,5 +59,5 @@ def run_dispatch():
                 f"Fuel Cost Estimate: ${best_load['profit']['driver_pay']:.2f}"
             )
           
-            else:
-                print("No good dispatch opportunities found")
+    else:
+        print("No good dispatch opportunities found")
