@@ -1,9 +1,18 @@
 from config.system_settings.dispatch_settings import *
 
 def calculate_profit(load):
+    try:
+   
     #Extract values from load parameter
     rate = load['rate']
     miles = load['miles']
+
+except KeyError as e:
+    raise ValueError(f"Missing required key in load: {e}")
+
+if miles == 0:
+    raise ValueError("Miles cannot be zero")
+rate_per_mile = rate/miles
 
     #Rate per mile
     rate_per_mile = rate / miles
