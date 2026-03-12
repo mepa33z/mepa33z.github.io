@@ -14,7 +14,6 @@ def run_dispatch():
     trucks = get_available_trucks()
     
     if len(good_loads) > 0 and len(trucks) > 0:        
-        
         evaluated_loads = []                           
         
         # Evaluate profitability of loads
@@ -42,7 +41,7 @@ def run_dispatch():
             reverse=True
         )
         
-        best_load = evaluated_loads[0]              
+        best_load = evaluated_loads[0]               
         
         truck = trucks.iloc[0]                       
         
@@ -64,10 +63,11 @@ def run_dispatch():
             f"Fuel Cost Estimate: ${best_load['profit']['driver_pay']:.2f}"
         )
 
-        dispatcher_profit = best_load['profit']['carrier_profit'] * DISPATCH_PERCENTAGE
+        dispatcher_profit = best_load['profit']['carrier_profit'] * DISPATCH_PERCENTAGE;
 
         print(
-            f"Dispatcher Profit: ${dispatcher_profit:.2f}"  
+            f"Dispatcher Profit: ${dispatcher_profit:.2f}"
+        )
         
     else:                                           
         print("No good dispatch opportunities found")
