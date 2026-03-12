@@ -11,7 +11,7 @@ def run_dispatch():
 
     trucks = get_available_trucks()
 
-    if len(good_loads)> 0 and len(trucks) > 0:
+    if len(good_loads) > 0 and len(trucks) > 0:
        
        evaluated_loads = []
 
@@ -35,8 +35,8 @@ def run_dispatch():
            })
 
            #Sort loads by carrier profit
-           evaluated_loads.sort(key=lambda x: x["profit"]["carrier_profit"],reverse=True)
-             
+           evaluated_loads.sort(key=lambda x: x["profit"]["carrier_profit"],reverse = True) 
+           
            best_load = evaluated_loads[0]
        
            truck = trucks.iloc[0]
