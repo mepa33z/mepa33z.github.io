@@ -34,12 +34,12 @@ def run_dispatch():
                 "profit":profit
            })
 
-           #Sort loads by carrier profit
-           evaluated_loads.sort(key=lambda x: x["profit"]["carrier_profit"],reverse = True) 
+   #Sort loads by carrier profit
+   evaluated_loads.sort(key=lambda x: x["profit"]["carrier_profit"],reverse = True) 
            
-           best_load = evaluated_loads[0]
+   best_load = evaluated_loads[0]
        
-           truck = trucks.iloc[0]
+   truck = trucks.iloc[0]
        
             print("\nDispatch Recommendation:\n")
        
