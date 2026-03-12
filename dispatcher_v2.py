@@ -3,6 +3,8 @@ from load_search import find_loads
 from truck_manager import get_available_trucks
 from rate_checker import filter_good_loads
 
+DISPATCH_PERCENTAGE = 0.10
+
 def run_dispatch():
     
     loads = find_loads()
@@ -61,6 +63,11 @@ def run_dispatch():
         print(
             f"Fuel Cost Estimate: ${best_load['profit']['driver_pay']:.2f}"
         )
+
+        dispatcher_profit = best_load['profit']['carrier_profit'] * DISPATCH_PERCENTAGE
+
+        print(
+            f"Dispatcher Profit: ${dispatcher_profit:.2f}"  
         
     else:                                           
         print("No good dispatch opportunities found")
