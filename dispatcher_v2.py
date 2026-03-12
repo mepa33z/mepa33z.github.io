@@ -11,14 +11,14 @@ def run_dispatch():
     
     trucks = get_available_trucks()
     
-    if len(good_loads) > 0 and len(trucks) > 0:        # 4 spaces (if statement)
+    if len(good_loads) > 0 and len(trucks) > 0:        
         
-        evaluated_loads = []                           # 8 spaces (inside if)
+        evaluated_loads = []                           
         
         # Evaluate profitability of loads
-        for index, load in good_loads.iterrows():     # 8 spaces (for loop)
+        for index, load in good_loads.iterrows():     
             
-            load_data = {                              # 12 spaces (inside for)
+            load_data = {                              
                 "rate": load["rate"],
                 "miles": load["miles"]
             }
@@ -34,17 +34,17 @@ def run_dispatch():
                 "profit": profit
             })
         
-        # Sort loads by carrier profit              # 8 spaces (OUTSIDE for loop)
+        # Sort loads by carrier profit              
         evaluated_loads.sort(
             key=lambda x: x["profit"]["carrier_profit"], 
             reverse=True
         )
         
-        best_load = evaluated_loads[0]              # 8 spaces
+        best_load = evaluated_loads[0]              
         
-        truck = trucks.iloc[0]                       # 8 spaces
+        truck = trucks.iloc[0]                       
         
-        print("\nDispatch Recommendation:\n")         # 8 spaces
+        print("\nDispatch Recommendation:\n")         
         
         print(
             f"Assign Truck {truck['truck_id']} "
@@ -62,5 +62,5 @@ def run_dispatch():
             f"Fuel Cost Estimate: ${best_load['profit']['driver_pay']:.2f}"
         )
         
-    else:                                            # 4 spaces (aligns with if)
+    else:                                           
         print("No good dispatch opportunities found")
