@@ -1,6 +1,9 @@
 from config.system_settings.dispatch_settings import *
 
 def calculate_profit(load):
+    #Extract values from load parameter
+    rate = load['rate']
+    miles = load['miles']
 
     #Rate per mile
     rate_per_mile = rate / miles
